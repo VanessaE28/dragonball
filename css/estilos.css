@@ -1,0 +1,58 @@
+body{
+    background: url('../images/fundo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#goku{
+    position: absolute;
+    height: 130px;
+    left: -150%; 
+    top: 80%;
+    animation: correr 8s infinite;
+}
+
+#gohan{
+    position: absolute;
+    height: 300px;
+    top: 0%;
+    transform: rotateY(180deg);
+    left: 100%;
+    animation: voar 8s infinite;
+}
+
+@keyframes correr{
+    0%{
+        left: -150%;
+        top: 80%;
+    }
+
+    100%{
+        top: 80%;
+        left: 110%;
+    }
+}
+
+@keyframes voar{
+    0%{
+        left: 100%;
+        top: 0%;
+    }
+
+    25%{
+        top: 20%;
+        left: 50%;
+    }
+
+    50%{
+        top: -10%;
+        left: 20%;
+    }
+
+    100%{
+        top: 50%;
+        left: -110%;
+    }
+}
